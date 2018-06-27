@@ -4,4 +4,8 @@ class QuotesController < Rulers::Controller
       "but thinking makes it so. #{[1,2,3].hello}" +
       "\n<pre>\n#{env}\n<pre>"
   end
+
+  def exception
+    raise "It's a bad one!"
+  end
 end
